@@ -4,17 +4,17 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import com.velan.testsample.App;
 
-class AppTest {
+public class AppTest {
 	
-	public AppTest() {
+	private AppTest() {
 		super();
 	}
 	@Test
-	void testCompareString() {
+	public void testCompareString() {
 		assertEquals(1, App.compareString("vela", "vela"));
 	}
 	@Test
-	void testCompareString1() {
+	public void testCompareString1() {
 		assertEquals(0, App.compareString("VELA", "vela"));
 	}
 }
