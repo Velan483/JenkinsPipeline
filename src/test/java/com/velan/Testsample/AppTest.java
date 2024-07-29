@@ -5,10 +5,7 @@ import org.junit.jupiter.api.Test;
 import com.velan.testsample.App;
 
 public class AppTest {
-	
-	private AppTest() {
-		super();
-	}
+
 	@Test
 	public void testCompareString() {
 		assertEquals(1, App.compareString("vela", "vela"));
