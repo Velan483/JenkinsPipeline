@@ -4,60 +4,60 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import com.velan.testsample.App;
 
-class TestApp {
+public class TestApp {
 	
 	//Sum of the Array Test
 	@Test
-	void testSum() {
+	public void testSum() {
 		int arr[]={1,2,3,4};
 		assertEquals(10,App.sum(arr));
 	}
 
 	//Compare String Using Boolean Function Test
 	@Test
-	void testCompare() {
+	public void testCompare() {
 		assertTrue(App.compareString1("vela", "vela"));
 	}
 	@Test
-	void testCompare1() {
+	public void testCompare1() {
 		assertFalse(App.compareString1("VELA", "vela"));
 	}
 	
 	// Sum of the digit Test
 	@Test
-	void testSumOfDigit() {	
+	public void testSumOfDigit() {	
 		assertEquals(6,App.sumOfDigit(123));
 	}
 	
 	//Maximum Value of the Digits Test
 	@Test
-	void testMaxOfDigit() {	
+	public void testMaxOfDigit() {	
 		assertEquals(6,App.maxOfDigit(563));
 	}
 	
 	//Increasing Order of Digit Test
 	@Test
-	void testIncOrder() {
+	public void testIncOrder() {
 		assertTrue(App.incOrderOfDigit(678));
 	}
 	@Test
-	void testIncOrder1() {
+	public void testIncOrder1() {
 		assertFalse(App.incOrderOfDigit(687));
 	}
 
 	//Fibonacci Series Test
 	@Test
-	void testfibonacci(){
+	public void testfibonacci(){
 		assertEquals(34,App.fibonacci(10));
 	}
 	
 	//Prime Number Test
 	@Test
-	void testprime(){
+	public void testprime(){
 		assertEquals(0,App.prime(11));
 	}
 	@Test
-	void testprime1(){
+	public void testprime1(){
 		assertEquals(1,App.prime(10));
 	}
 	 
