@@ -1,12 +1,9 @@
 package com.velan.testsample;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-import com.velan.testsample.App;
-
-class AppTestBalance {
+class TestApp {
 	
 	//Sum of the Array Test
 	@Test

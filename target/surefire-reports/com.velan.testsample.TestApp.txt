@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.velan.testsample.AppTest
+Test set: com.velan.testsample.TestApp
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s -- in com.velan.testsample.AppTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s -- in com.velan.testsample.TestApp

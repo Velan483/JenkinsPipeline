@@ -1,7 +1,10 @@
 package com.velan.testsample;
 
-public class App 
-{
+public class App {
+	
+	private App() {
+    }
+	
 	//Compare String Using Integer Function
     public static int compareString( String str1,String str2 )
     {
@@ -23,15 +26,10 @@ public class App
     }
     
     //Compare String Using Boolean Function
-    public static boolean compareString1( String str1,String str2 )
-    {
-        if(str1.equals(str2)) {
-        	return true;
-        }	
-        else {
-		    return false;
-        }
+    public static boolean compareString1(String str1, String str2) {
+        return str1.equals(str2);
     }
+
     
     // Sum of the digit
     public static int sumOfDigit(int n) {   	
