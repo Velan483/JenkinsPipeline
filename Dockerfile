@@ -1,10 +1,18 @@
 #
 # Build
 #
-FROM maven:3.8.3-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-11
+
+# Install git
+RUN apt-get update && apt-get install -y git
+
+# Copy the project files
 COPY src /home/app/src
 COPY pom.xml /home/app
+
+# Build the project
 RUN mvn -f /home/app/pom.xml clean package
+
 #
 # Package stage
 #
