@@ -1,10 +1,12 @@
-package com.velan.Testsample;
+package com.velan.testsample;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class AppTest1 {
+import com.velan.testsample.App;
+
+class AppTestBalance {
 	
 	//Sum of the Array Test
 	@Test
@@ -16,11 +18,11 @@ class AppTest1 {
 	//Compare String Using Boolean Function Test
 	@Test
 	void testCompare() {
-		assertTrue(App.CompareString1("vela", "vela"));
+		assertTrue(App.compareString1("vela", "vela"));
 	}
 	@Test
 	void testCompare1() {
-		assertFalse(App.CompareString1("VELA", "vela"));
+		assertFalse(App.compareString1("VELA", "vela"));
 	}
 	
 	// Sum of the digit Test
@@ -38,11 +40,11 @@ class AppTest1 {
 	//Increasing Order of Digit Test
 	@Test
 	void testIncOrder() {
-		assertTrue(App.IncOrderOfDigit(678));
+		assertTrue(App.incOrderOfDigit(678));
 	}
 	@Test
 	void testIncOrder1() {
-		assertFalse(App.IncOrderOfDigit(687));
+		assertFalse(App.incOrderOfDigit(687));
 	}
 
 	//Fibonacci Series Test

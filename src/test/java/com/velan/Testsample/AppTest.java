@@ -1,18 +1,20 @@
-package com.velan.Testsample;
+package com.velan.testsample;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import com.velan.testsample.App;
+
 class AppTest {
 
 	@Test
 	void testCompareString() {
-		assertEquals(1, App.CompareString("vela", "vela"));
+		assertEquals(1, App.compareString("vela", "vela"));
 	}
 	@Test
 	void testCompareString1() {
-		assertEquals(0, App.CompareString("VELA", "vela"));
+		assertEquals(0, App.compareString("VELA", "vela"));
 	}
 
 }

@@ -1,14 +1,16 @@
-package com.velan.Testsample;
+package com.velan.testsample;
 
 public class App 
 {
 	//Compare String Using Integer Function
-    public static int CompareString( String str1,String str2 )
+    public static int compareString( String str1,String str2 )
     {
-        if(str1.equals(str2)) 
+        if(str1.equals(str2)) {
         	return 1;
-        else
+        }
+        else {
 		    return 0;
+        }
     }
     
     //Sum of the Array
@@ -21,12 +23,14 @@ public class App
     }
     
     //Compare String Using Boolean Function
-    public static boolean CompareString1( String str1,String str2 )
+    public static boolean compareString1( String str1,String str2 )
     {
-        if(str1.equals(str2)) 
+        if(str1.equals(str2)) {
         	return true;
-        else
+        }	
+        else {
 		    return false;
+        }
     }
     
     // Sum of the digit
@@ -54,7 +58,7 @@ public class App
     }
      
     //Increasing Order of Digit
-     public static boolean IncOrderOfDigit(int n) {   	
+     public static boolean incOrderOfDigit(int n) {   	
     	String str = Integer.toString(n);
       	for(int i=0;i<str.length()-1;i++) {
       		if(str.charAt(i) >= str.charAt(i+1)) {
@@ -66,8 +70,10 @@ public class App
      
    //Fibonacci Series
      public static int fibonacci(int n){
-        int n1=0,n2=1,n3,i;    
-        for(i=2;i<n;++i){    
+        int n1=0;
+        int n2=1;
+        int n3;    
+        for(int i=2;i<n;++i){    
      		n3=n1+n2;      
      		n1=n2;    
      		n2=n3;    
